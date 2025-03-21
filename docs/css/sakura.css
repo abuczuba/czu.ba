@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: #e3dedd;
+    color: #bc6ec5;
     /* Cursor */
     border-bottom: 2px solid #b2b2b2;
     /* Foreground */
@@ -39,13 +39,13 @@ blockquote {
     border-left: 5px solid #2aa1ae;
     /* Comments */
     margin-bottom: 2.5rem;
-    background-color: #292b2e;
+    background-color: #212026;
     /* Background */
 }
 
 /* Pre and Code */
 pre {
-    background-color: #292b2e;
+    background-color: #212026;
     /* Background */
     display: block;
     padding: 1em;
@@ -76,4 +76,43 @@ input[type=file]::file-selector-button {
     /* Background */
     color: #b2b2b2;
     /* Foreground */
+}
+
+.button:hover,
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+input[type=file]::file-selector-button:hover {
+    background-color: #4f97d7;
+    color: #292b2e;
+}
+
+textarea,
+select,
+input {
+    color: #b2b2b2;
+    background-color: #212026;
+    border: 1px solid #212026;
+    caret-color: #2aa198;
+    /* Spacemacs cursor color */
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #4f97d7;
+}
+
+::selection {
+    background-color: #2aa198;
+    /* Spacemacs cursor color */
+    color: #292b2e;
+    /* Dark background for contrast */
+}
+
+::-moz-selection {
+    background-color: #2aa198;
+    /* Spacemacs cursor color */
+    color: #292b2e;
+    /* Dark background for contrast */
 }
