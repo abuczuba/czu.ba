@@ -1,0 +1,4 @@
+{:paths ["."]
+ :deps {}
+ :aliases
+ {:build {:ns-default build}}}
