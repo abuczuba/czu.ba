@@ -1,4 +1,4 @@
-#!/usr/bin/bb
+#!/usr/bin/env bb
 (ns filter
   (:require [cheshire.core :as json]
             [clojure.walk :as walk]
