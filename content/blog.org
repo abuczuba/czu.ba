@@ -1,3 +1,7 @@
 #+macro: br @@html:<br>@@
 
+***** the czubicle
+
+@@html:<style> p { text-align: center; } </style>@@
 My personal blog will soon be making its debut.
+The name you see above is a transient vanity plate.
