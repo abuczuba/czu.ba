@@ -1,6 +1,6 @@
 #+macro: br @@html:<br>@@
 
-**** the czubicle
+*** *the czubicle*
 
 @@html:<style> p { text-align: left; } </style><p>@@
 /March 23, 2025/
