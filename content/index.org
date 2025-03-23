@@ -14,7 +14,6 @@ That statement will be more inspiring when I have more than 30 words on said web
 
 You may reach me at [[mailto:email@czu.ba][email@czu.ba]].
 Alternatively, use [[mailto:pgp@czu.ba][pgp@czu.ba]]:
-
 @@html:<section id="pgp" style="margin-top: 3em;">
   <div style="max-width: 100%; overflow-x: auto; margin: 1em auto; background: #f4f4f4; padding: 1em; border-radius: 8px; border: 1px solid #ccc; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85em; line-height: 1.4;">
 <pre style="margin: 0; white-space: pre-wrap; word-break: break-word;">
@@ -29,7 +28,7 @@ yvTNQKMjbsDv0VGtY++HAQ==
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
   </div>
-  <p style="text-align: center; margin-top: 0.5em;">
-    <a href="/keys/pgp.txt" download style="font-size: 0.9em;">Download as .txt</a>
-  </p>
+#  <p style="text-align: center; margin-top: 0.5em;">
+#    <a href="/keys/pgp.txt" download style="font-size: 0.9em;">Download as .txt</a>
+#  </p>
 </section>@@
