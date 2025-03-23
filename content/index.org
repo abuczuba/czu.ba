@@ -9,13 +9,12 @@
 
 @@html:<style> p { text-align: center; } </style>@@
 My name is Matthew Czuba, and this is my website.
+
 That statement will be more inspiring when I have more than 30 words on said website, and trust it, those words are coming. What's more, the local buzz dictates that there is a [[./blog.org][blog]] a-brewin'.
-You may reach me at [[mailto:email@czu.ba]email[@czu.ba]]. Alternatively:
+
+You may reach me at [[mailto:email@czu.ba][email@czu.ba]].
+Alternatively, use [[mailto:pgp@czu.ba][pgp@czu.ba]]:
 @@html:<section id="pgp" style="margin-top: 3em;">
-  <h2 style="text-align: center; font-weight: 500;">pgp@czu.ba</h2>
-  <p style="text-align: center;">
-    <a href="/keys/pgp.txt" download style="font-size: 0.9em;">Download as .txt</a>
-  </p>
   <div style="max-width: 100%; overflow-x: auto; margin: 1em auto; background: #f4f4f4; padding: 1em; border-radius: 8px; border: 1px solid #ccc; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85em; line-height: 1.4;">
 <pre style="margin: 0; white-space: pre-wrap; word-break: break-word;">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -28,5 +27,8 @@ yvTNQKMjbsDv0VGtY++HAQ==
 =l8RE
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
+  <p style="text-align: center;">
+    <a href="/keys/pgp.txt" download style="font-size: 0.9em;">Download as .txt</a>
+  </p>
   </div>
-</section>@@
+</section>
