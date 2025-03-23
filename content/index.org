@@ -11,7 +11,7 @@
 My name is Matthew Czuba, and this is my website.
 That statement will be more inspiring when I have more than 30 words on said website, and trust it, those words are coming. What's more, the local buzz dictates that there is a [[./blog.org][blog]] a-brewin'.
 You may reach me at [[mailto:email@czu.ba]email[@czu.ba]]. Alternatively:
-<section id="pgp" style="margin-top: 3em;">
+@@html:<section id="pgp" style="margin-top: 3em;">
   <h2 style="text-align: center; font-weight: 500;">pgp@czu.ba</h2>
   <p style="text-align: center;">
     <a href="/keys/pgp.txt" download style="font-size: 0.9em;">Download as .txt</a>
@@ -29,4 +29,4 @@ yvTNQKMjbsDv0VGtY++HAQ==
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
   </div>
-</section>
+</section>@@
