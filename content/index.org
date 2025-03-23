@@ -9,4 +9,4 @@
 
 @@html:<style> p { text-align: center; } </style>@@
 My name is Matthew Czuba, and this is my website.
-That statement will be more convincing when I have more than 30 words on said website, and those words are coming. What's more, the local buzz dictates that there is a [[./blog.org][blog]] a-brewin'.
+That statement will be more inspiring when I have more than 30 words on said website, and trust it, those words are coming. What's more, the local buzz dictates that there is a [[./blog.org][blog]] a-brewin'.
