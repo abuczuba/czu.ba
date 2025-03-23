@@ -49,11 +49,5 @@
            (spit out))
       (println "Wrote" out))))
 
-(fs/create-dirs "public/css")
-(fs/copy-tree "docs/css" "public/css" {:replace-existing true})
-
-(when (fs/exists? "docs/CNAME")
-  (fs/copy "docs/CNAME" "public/CNAME" {:replace-existing true}))
-
 (fs/copy-tree "content/static" "public/static" {:replace-existing true})
 (println "Copied over static artifacts")
