@@ -1,17 +1,17 @@
 /* Sakura.css v1.5.0 - Modified with Spacemacs-Dark Theme
  * ================
- * Minimal css theme customized with Doom Emacs fonts and colors
+ * Minimal css theme - customized with Doom Emacs fonts and colors inspired by Spacemacs!
  * Project: https://github.com/oxalorg/sakura/
+ * Original implementation: https://github.com/goderich/website
+ * Spacemacs theme implementation by Matthew Czuba: https://github.com/abuczuba/czu.ba
+ * Spacemacs-Dark: https://github.com/syl20bnr/spacemacs/tree/master/themes/spacemacs-dark
  */
 /* Body */
-* {
-  cursor: default;
-}
-
 html {
   font-size: 62.5%;
   font-family: "Source Code Pro", monospace;
-  caret-color: #66CD00; /* chartreuse3 */
+  caret-color: #66CD00;
+  /* chartreuse3 from the insert cursor in spacemacs! */
 }
 
 #container {
@@ -28,8 +28,10 @@ body {
   line-height: 1.618;
   max-width: 38em;
   margin: auto;
-  color: #b2b2b2;           /* spacemacs-dark foreground */
-  background-color: #292b2e; /* spacemacs-dark background */
+  color: #b2b2b2;
+  /* spacemacs-dark foreground */
+  background-color: #292b2e;
+  /* spacemacs-dark background */
 }
 
 @media (max-width: 684px) {
@@ -37,12 +39,19 @@ body {
     font-size: 1.53rem;
   }
 }
+
 @media (max-width: 382px) {
   body {
     font-size: 1.45rem;
   }
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.1;
   font-family: "Source Code Pro", monospace;
   font-weight: 700;
@@ -52,7 +61,8 @@ h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-word;
-  color: #c5c8c6;           /* Light heading color */
+  color: #c5c8c6;
+  /* Light heading color */
 }
 
 h1 {
@@ -80,7 +90,8 @@ h6 {
 }
 
 h3#name {
-  color: #CDAD00;          /* LightGoldenrod3 - visual-state-cursor */
+  color: #CDAD00;
+  /* LightGoldenrod3 - visual-state-cursor */
 }
 
 p {
@@ -88,22 +99,26 @@ p {
   margin-bottom: 2.5rem;
 }
 
-small, sub, sup {
+small,
+sub,
+sup {
   font-size: 60%;
 }
 
 hr {
-  border-color: #5d4d7a;    /* spacemacs inactive-gray */
+  border-color: #5d4d7a;
+  /* spacemacs inactive-gray */
 }
 
 a {
   text-decoration: none;
-  color: #7EC0EE;           /* SkyBlue2 - emacs-state-cursor */
-  cursor: pointer;
+  color: #7EC0EE;
+  /* SkyBlue2 - emacs-state-cursor */
 }
 
 a:hover {
-  color: #EEAD0E;           /* DarkGoldenrod2 - insert-state-cursor */
+  color: #EEAD0E;
+  /* DarkGoldenrod2 - insert-state-cursor */
   border-bottom: 2px solid #b2b2b2;
 }
 
@@ -124,16 +139,19 @@ blockquote {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-right: 0.8em;
-  border-left: 5px solid #5d4d7a;  /* spacemacs inactive-gray */
+  border-left: 5px solid #5d4d7a;
+  /* spacemacs inactive-gray */
   margin-bottom: 2.5rem;
-  background-color: #212026;        /* darker spacemacs background */
+  background-color: #212026;
+  /* darker spacemacs background */
 }
 
 blockquote p {
   margin-bottom: 0;
 }
 
-img, video {
+img,
+video {
   height: auto;
   max-width: 100%;
   margin-top: 0px;
@@ -141,38 +159,51 @@ img, video {
 }
 
 #photo {
-  /* border: 3px solid #7EC0EE; */  /* Commented out for now  */
-  border-radius: 50%;               /* Restored from original */
-  margin-top: 1rem;                 /* Restored from original */
-  display: block;                   /* Restored from original */
-  margin-left: auto;                /* Restored from original */
-  margin-right: auto;               /* Restored from original */
-  max-width: 50%;                   /* Restored from original */
+  /* border: 3px solid #7EC0EE; */
+  /* Commented out for now  */
+  border-radius: 50%;
+  /* Restored from original */
+  margin-top: 1rem;
+  /* Restored from original */
+  display: block;
+  /* Restored from original */
+  margin-left: auto;
+  /* Restored from original */
+  margin-right: auto;
+  /* Restored from original */
+  max-width: 50%;
+  /* Restored from original */
   filter: brightness(0.9) contrast(1.1);
 }
 
 /* Pre and Code */
 pre {
-  background-color: #212026;  /* darker spacemacs background */
+  background-color: #212026;
+  /* darker spacemacs background */
   display: block;
   padding: 1em;
   overflow-x: auto;
   margin-top: 0px;
   margin-bottom: 2.5rem;
   font-size: 0.9em;
-  color: #b2b2b2;            /* spacemacs-dark foreground */
+  color: #b2b2b2;
+  /* spacemacs-dark foreground */
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
   font-family: "Source Code Pro", monospace;
   font-size: 0.9em;
   padding: 0 0.5em;
-  background-color: #212026;  /* darker spacemacs background */
-  color: #b2b2b2;             /* spacemacs-dark foreground */
+  background-color: #212026;
+  /* darker spacemacs background */
+  color: #b2b2b2;
+  /* spacemacs-dark foreground */
   white-space: pre-wrap;
 }
 
-pre > code {
+pre>code {
   padding: 0;
   background-color: transparent;
   white-space: pre;
@@ -187,59 +218,96 @@ table {
   margin-bottom: 2rem;
 }
 
-td, th {
+td,
+th {
   padding: 0.5em;
-  border-bottom: 1px solid #5d4d7a;  /* spacemacs inactive-gray */
+  border-bottom: 1px solid #5d4d7a;
+  /* spacemacs inactive-gray */
 }
 
 /* Buttons, forms and input */
-input, textarea {
-  border: 1px solid #b2b2b2;  /* spacemacs-dark foreground */
-  cursor: pointer;
+input,
+textarea {
+  border: 1px solid #b2b2b2;
+  /* spacemacs-dark foreground */
 }
-input:focus, textarea:focus {
-  border: 1px solid #7EC0EE;  /* SkyBlue2 - emacs-state-cursor */
+
+input:focus,
+textarea:focus {
+  border: 1px solid #7EC0EE;
+  /* SkyBlue2 - emacs-state-cursor */
 }
 
 textarea {
   width: 100%;
 }
 
-.button, button, input[type=submit], input[type=reset], input[type=button], input[type=file]::file-selector-button {
+.button,
+button,
+input[type=submit],
+input[type=reset],
+input[type=button],
+input[type=file]::file-selector-button {
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   border-radius: 5px;
-  border: 1px solid #7EC0EE;  /* SkyBlue2 - emacs-state-cursor */
-  color: #b2b2b2;             /* spacemacs-dark foreground */
-  background-color: #292b2e;  /* spacemacs-dark background */
+  border: 1px solid #7EC0EE;
+  /* SkyBlue2 - emacs-state-cursor */
+  color: #b2b2b2;
+  /* spacemacs-dark foreground */
+  background-color: #292b2e;
+  /* spacemacs-dark background */
   cursor: pointer;
   box-sizing: border-box;
 }
 
-.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled], input[type=file]::file-selector-button[disabled] {
+.button[disabled],
+button[disabled],
+input[type=submit][disabled],
+input[type=reset][disabled],
+input[type=button][disabled],
+input[type=file]::file-selector-button[disabled] {
   cursor: default;
   opacity: 0.5;
 }
 
-.button:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, input[type=file]::file-selector-button:hover {
-  background-color: #5d4d7a;  /* spacemacs inactive-gray */
-  color: #c5c8c6;            /* Light heading color */
+.button:hover,
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+input[type=file]::file-selector-button:hover {
+  background-color: #5d4d7a;
+  /* spacemacs inactive-gray */
+  color: #c5c8c6;
+  /* Light heading color */
   outline: 0;
 }
 
-.button:focus-visible, button:focus-visible, input[type=submit]:focus-visible, input[type=reset]:focus-visible, input[type=button]:focus-visible, input[type=file]::file-selector-button:focus-visible {
+.button:focus-visible,
+button:focus-visible,
+input[type=submit]:focus-visible,
+input[type=reset]:focus-visible,
+input[type=button]:focus-visible,
+input[type=file]::file-selector-button:focus-visible {
   outline-style: solid;
   outline-width: 2px;
 }
 
-textarea, select, input {
-  color: #b2b2b2;            /* spacemacs-dark foreground */
-  padding: 6px 10px;         /* The 6px vertically centers text on FF, ignored by Webkit */
+textarea,
+select,
+input {
+  color: #b2b2b2;
+  /* spacemacs-dark foreground */
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
   margin-bottom: 10px;
-  background-color: #212026; /* darker spacemacs background */
-  border: 1px solid #5d4d7a; /* spacemacs inactive-gray */
+  background-color: #212026;
+  /* darker spacemacs background */
+  border: 1px solid #5d4d7a;
+  /* spacemacs inactive-gray */
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
@@ -265,16 +333,14 @@ nav ul {
 }
 
 nav a {
-  color: #7EC0EE;                /* SkyBlue2 */
+  color: #7EC0EE;
+  /* SkyBlue2 */
 }
 
 nav a:hover {
-  color: #EEAD0E;                /* DarkGoldenrod2 */
+  color: #EEAD0E;
+  /* DarkGoldenrod2 */
   border-bottom: none;
-}
-
-nav a.active {
-  color: #EEAD0E;                /* DarkGoldenrod2 */
 }
 
 /* Removed special styling for home link */
@@ -282,7 +348,8 @@ nav a.active {
   color: #EEAD0E;                
 } */
 
-nav li, #home-container {
+nav li,
+#home-container {
   display: inline-block;
   margin: 0;
   padding: 0.75rem;
@@ -293,15 +360,19 @@ nav li, #home-container {
 footer {
   margin-left: auto;
   margin-right: auto;
-  font-size: 70%;               /* Increased from 60% */
+  font-size: 70%;
 }
 
-footer, footer a, footer a:visited {
-  color: #5d4d7a;              /* spacemacs inactive-gray */
+footer,
+footer a,
+footer a:visited {
+  color: #5d4d7a;
+  /* spacemacs inactive-gray */
 }
 
 footer a:hover {
-  color: #66CD00;              /* chartreuse3 */
+  color: #66CD00;
+  /* chartreuse3 */
   border-bottom: 1px solid #66CD00;
 }
 
@@ -313,11 +384,14 @@ footer a:hover {
 
 /* PGP section */
 #pgp div {
-  background-color: #212026 !important; /* darker spacemacs background */
-  border-color: #5d4d7a !important;     /* spacemacs inactive-gray */
+  background-color: #212026 !important;
+  /* darker spacemacs background */
+  border-color: #5d4d7a !important;
+  /* spacemacs inactive-gray */
   font-family: "Source Code Pro", monospace !important;
 }
 
 #pgp pre {
-  color: #b2b2b2;                       /* spacemacs-dark foreground */
+  color: #b2b2b2;
+  /* spacemacs-dark foreground */
 }

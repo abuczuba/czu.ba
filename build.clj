@@ -39,19 +39,7 @@
       [:div#container
        header
        [:main (h/raw content)]
-       footer]
-      [:script
-       "document.addEventListener('DOMContentLoaded', function() {
-          const currentPath = window.location.pathname;
-          const navLinks = document.querySelectorAll('.nav-link');
-          navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if ((currentPath === '/' && href === '/') || 
-                (href !== '/' && currentPath.endsWith(href))) {
-              link.classList.add('active');
-            }
-          });
-        }"]]])))
+       footer]]])))
 
 (doseq [file (fs/list-dir "content")]
   (when (= (fs/extension file) "org")

@@ -4,6 +4,7 @@
 
 @@html:<style> p { text-align: left; } </style><p>@@
 /March 23, 2025/
-@@html:<br><style> p { text-align: center; } </style>@@
+
+@@html:<br><style> p { text-align: center; } </style><p>@@
 My personal blog will soon be making its debut. It will be rudimentary, probably just a top-down chronological list of posts, until 育賢老師 writes some fancy-schmancy blog functionality.
 The name you see above was initially thought to serve as a mere transient vanity plate. However, at the behest of encouragement from my peers, I have decided that czubicle is rather too clever to pass up.
