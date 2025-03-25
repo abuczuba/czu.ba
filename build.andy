@@ -32,26 +32,13 @@
      [:head
       [:meta {:charset "utf-8"}]
       [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
-      [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap"}]
       [:link {:rel "stylesheet" :href "/css/normalize.css"}]
       [:link {:rel "stylesheet" :href "/css/sakura.css"}]]
      [:body
       [:div#container
        header
        [:main (h/raw content)]
-       footer]
-      [:script
-       "document.addEventListener('DOMContentLoaded', function() {
-          const currentPath = window.location.pathname;
-          const navLinks = document.querySelectorAll('.nav-link');
-          navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if ((currentPath === '/' && href === '/') || 
-                (href !== '/' && currentPath.endsWith(href))) {
-              link.classList.add('active');
-            }
-          });
-        }"]]])))
+       footer]]])))
 
 (doseq [file (fs/list-dir "content")]
   (when (= (fs/extension file) "org")
