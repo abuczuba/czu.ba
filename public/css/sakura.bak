@@ -1,12 +1,12 @@
-/* Sakura.css v1.5.0 - Modified with Spacemacs-Dark Theme
+/* Sakura.css v1.5.0
  * ================
- * Minimal css theme customized with Doom Emacs fonts and colors
+ * Minimal css theme.
  * Project: https://github.com/oxalorg/sakura/
  */
 /* Body */
 html {
   font-size: 62.5%;
-  font-family: "Source Code Pro", monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 #container {
@@ -23,8 +23,8 @@ body {
   line-height: 1.618;
   max-width: 38em;
   margin: auto;
-  color: #b2b2b2;           /* spacemacs-dark foreground */
-  background-color: #292b2e; /* spacemacs-dark background */
+  color: #4a4a4a;
+  background-color: #f9f9f9;
 }
 
 @media (max-width: 684px) {
@@ -39,7 +39,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
-  font-family: "Source Code Pro", monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   font-weight: 700;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -47,7 +47,6 @@ h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-word;
-  color: #c5c8c6;           /* Light heading color */
 }
 
 h1 {
@@ -74,10 +73,6 @@ h6 {
   font-size: 1em;
 }
 
-h3#name {
-  color: #CDAD00;          /* LightGoldenrod3 - visual-state-cursor */
-}
-
 p {
   margin-top: 0px;
   margin-bottom: 2.5rem;
@@ -88,17 +83,19 @@ small, sub, sup {
 }
 
 hr {
-  border-color: #5d4d7a;    /* spacemacs inactive-gray */
+  border-color: #1d7484;
 }
 
 a {
   text-decoration: none;
-  color: #7EC0EE;           /* SkyBlue2 - emacs-state-cursor */
+  color: #1d7484;
 }
-
+/* a:visited { */
+/*   color: #144f5a; */
+/* } */
 a:hover {
-  color: #EEAD0E;           /* DarkGoldenrod2 - insert-state-cursor */
-  border-bottom: 2px solid #b2b2b2;
+  color: #982c61;
+  border-bottom: 2px solid #4a4a4a;
 }
 
 ul {
@@ -118,9 +115,9 @@ blockquote {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-right: 0.8em;
-  border-left: 5px solid #5d4d7a;  /* spacemacs inactive-gray */
+  border-left: 5px solid #1d7484;
   margin-bottom: 2.5rem;
-  background-color: #212026;        /* darker spacemacs background */
+  background-color: #f1f1f1;
 }
 
 blockquote p {
@@ -134,30 +131,21 @@ img, video {
   margin-bottom: 2.5rem;
 }
 
-#photo {
-  border: 3px solid #7EC0EE;  /* SkyBlue2 - emacs-state-cursor */
-  border-radius: 5px;
-  filter: brightness(0.9) contrast(1.1);
-}
-
 /* Pre and Code */
 pre {
-  background-color: #212026;  /* darker spacemacs background */
+  background-color: #f1f1f1;
   display: block;
   padding: 1em;
   overflow-x: auto;
   margin-top: 0px;
   margin-bottom: 2.5rem;
   font-size: 0.9em;
-  color: #b2b2b2;            /* spacemacs-dark foreground */
 }
 
 code, kbd, samp {
-  font-family: "Source Code Pro", monospace;
   font-size: 0.9em;
   padding: 0 0.5em;
-  background-color: #212026;  /* darker spacemacs background */
-  color: #b2b2b2;             /* spacemacs-dark foreground */
+  background-color: #f1f1f1;
   white-space: pre-wrap;
 }
 
@@ -178,15 +166,15 @@ table {
 
 td, th {
   padding: 0.5em;
-  border-bottom: 1px solid #5d4d7a;  /* spacemacs inactive-gray */
+  border-bottom: 1px solid #f1f1f1;
 }
 
 /* Buttons, forms and input */
 input, textarea {
-  border: 1px solid #b2b2b2;  /* spacemacs-dark foreground */
+  border: 1px solid #4a4a4a;
 }
 input:focus, textarea:focus {
-  border: 1px solid #7EC0EE;  /* SkyBlue2 - emacs-state-cursor */
+  border: 1px solid #1d7484;
 }
 
 textarea {
@@ -199,9 +187,7 @@ textarea {
   text-decoration: none;
   white-space: nowrap;
   border-radius: 5px;
-  border: 1px solid #7EC0EE;  /* SkyBlue2 - emacs-state-cursor */
-  color: #b2b2b2;             /* spacemacs-dark foreground */
-  background-color: #292b2e;  /* spacemacs-dark background */
+  border: 1px solid #1d7484;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -210,8 +196,8 @@ textarea {
   opacity: 0.5;
 }
 .button:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, input[type=file]::file-selector-button:hover {
-  background-color: #5d4d7a;  /* spacemacs inactive-gray */
-  color: #c5c8c6;             /* Light heading color */
+  background-color: #982c61;
+  color: #f9f9f9;
   outline: 0;
 }
 .button:focus-visible, button:focus-visible, input[type=submit]:focus-visible, input[type=reset]:focus-visible, input[type=button]:focus-visible, input[type=file]::file-selector-button:focus-visible {
@@ -220,46 +206,64 @@ textarea {
 }
 
 textarea, select, input {
-  color: #b2b2b2;             /* spacemacs-dark foreground */
+  color: #4a4a4a;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   margin-bottom: 10px;
-  background-color: #212026;  /* darker spacemacs background */
-  border: 1px solid #5d4d7a;  /* spacemacs inactive-gray */
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
 }
-
-/* Navigation bar */
-.site-header {
-  margin-top: 1em;
-  margin-bottom: 2em;
+textarea:focus, select:focus, input:focus {
+  border: 1px solid #1d7484;
+  outline: 0;
 }
 
-.nav {
+input[type=checkbox]:focus {
+  outline: 1px dotted #1d7484;
+}
+
+label, legend, fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Photo */
+
+#photo {
+    border-radius:50%;
+    margin-top:1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    filter: grayscale(50%);
+}
+
+#name {
+    text-align: center;
+}
+
+/* Nav */
+
+nav {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 nav ul {
-  list-style: none;
+  align-items: center;
+  margin-bottom: 0;
   padding: 0;
-  margin: 0;
+  list-style: none;
 }
 
 nav a {
-  color: #7EC0EE;                /* SkyBlue2 */
-}
-
-nav a:hover {
-  color: #66CD00;                /* chartreuse3 */
-  border-bottom: none;
-}
-
-nav a.home {
-  color: #EEAD0E;                /* DarkGoldenrod2 */
+    color: #184b44;
 }
 
 nav li, #home-container {
@@ -277,27 +281,11 @@ footer {
 }
 
 footer, footer a, footer a:visited {
-    color: #5d4d7a;              /* spacemacs inactive-gray */
-}
-
-footer a:hover {
-    color: #66CD00;              /* chartreuse3 */
-    border-bottom: 1px solid #66CD00;
+    color: #aaaaaa;
 }
 
 @media (max-width: 382px) {
   footer {
     font-size: 1.5vw;
   }
-}
-
-/* PGP section */
-#pgp div {
-  background-color: #212026 !important; /* darker spacemacs background */
-  border-color: #5d4d7a !important;     /* spacemacs inactive-gray */
-  font-family: "Source Code Pro", monospace !important;
-}
-
-#pgp pre {
-  color: #b2b2b2;                       /* spacemacs-dark foreground */
 }
