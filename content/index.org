@@ -1,6 +1,6 @@
 
 #+ATTR_HTML: :id photo
-[[./static/photo2.jpeg]]
+[[./static/profile.jpeg]]
 
 *** Matthew N. Czuba 楚孟修
 :PROPERTIES:
