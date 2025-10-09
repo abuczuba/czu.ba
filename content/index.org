@@ -16,6 +16,7 @@ You may reach me at [[mailto:email@czu.ba][email@czu.ba]]. Alternatively, use [[
   <div style="max-width: 100%; overflow-x: auto; margin: 1em auto; background: #f4f4f4; padding: 1em; border-radius: 8px; border: 1px solid #ccc; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85em; line-height: 1.4;">
 <pre style="margin: 0; white-space: pre-wrap; word-break: break-word;">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
+
 mDMEZ9/dDxYJKwYBBAHaRw8BAQdARrq+N43FI8rFW/+Y+zDXF4SDT/qOg2iBndKb
 r2NLclaIeAQgFgoAIBYhBL6rGfslmXyxWVKLzNuez0YMA1SaBQJn390SAh0AAAoJ
 ENuez0YMA1Say50BAOVHE6oX9NruXWEcAgay/o/hjGL+Xb2z4Lq5FhDRgWYsAQDf
