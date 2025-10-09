@@ -32,6 +32,10 @@
      [:head
       [:meta {:charset "utf-8"}]
       [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
+      [:title "Matthew Czuba | Personal Website"]
+      [:meta {:name "description" :content "Personal website of Matthew N. Czuba (楚孟修), software developer and NLP engineer."}]
+      [:meta {:name "keywords" :content "Czuba, Matthew, Matthew Czuba, 楚孟修, Matthew N. Czuba, abuczuba, computational linguistics, melange, melange technologies, nlp, natural language processing"}]
+      [:meta {:name "author" :content "Matthew N. Czuba"}]
       [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap"}]
       [:link {:rel "stylesheet" :href "/css/normalize.css"}]
       [:link {:rel "stylesheet" :href "/css/sakura.css"}]]
