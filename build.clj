@@ -56,3 +56,15 @@
 
 (fs/copy-tree "content/static" "public/static" {:replace-existing true})
 (println "Copied over static artifacts")
+
+;; Copy CV and resume to root for direct access
+(fs/copy "content/static/czuba-resume-cv.pdf" "public/czuba-resume-cv.pdf")
+(fs/copy "content/static/czuba-resume.pdf" "public/czuba-resume.pdf")
+(println "Copied CV and resume to public root")
+
+;; Create redirect pages for /cv and /resume
+(spit "public/cv.html"
+      "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0;url=/czuba-resume-cv.pdf\"><title>Redirecting to CV</title></head><body><p>Redirecting to <a href=\"/czuba-resume-cv.pdf\">CV</a>...</p></body></html>")
+(spit "public/resume.html"
+      "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0;url=/czuba-resume.pdf\"><title>Redirecting to Resume</title></head><body><p>Redirecting to <a href=\"/czuba-resume.pdf\">resume</a>...</p></body></html>")
+(println "Created redirect pages for /cv and /resume")
