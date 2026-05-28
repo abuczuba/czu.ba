@@ -57,10 +57,9 @@
 (fs/copy-tree "content/static" "public/static" {:replace-existing true})
 (println "Copied over static artifacts")
 
-;; Copy CV and resume to root for direct access
+;; Copy the current resume to the root for direct access
 (fs/copy "content/static/czuba-resume-q2-2026.pdf" "public/czuba-resume-q2-2026.pdf")
-(fs/copy "content/static/czuba-resume.pdf" "public/czuba-resume.pdf")
-(println "Copied CV and resume to public root")
+(println "Copied current resume to public root")
 
 ;; Create redirect pages for /cv and /resume
 (spit "public/cv.html"
